@@ -7,8 +7,8 @@ target 'swift-vehicle-lab' do
 
   # Pods for swift-vehicle-lab
   def testing_pods
-    pod 'Quick', '~> 0.9'
-    pod 'Nimble', '~> 4.1'
+    pod 'Nimble', git: 'https://github.com/Quick/Nimble.git'
+    pod 'Quick', git: 'https://github.com/Quick/Quick.git', branch: 'swift-3.0'
   end
 
   target 'swift-vehicle-labTests' do
@@ -17,4 +17,12 @@ target 'swift-vehicle-lab' do
     testing_pods
   end
 
+end
+
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        target.build_configurations.each do |config|
+            config.build_settings['SWIFT_VERSION'] = '3.0'
+        end
+    end
 end
