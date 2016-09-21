@@ -28,14 +28,14 @@ class RaceCar: Car {
     
     func driftRight() {
         if speed > 0 {
-            heading = (heading + 90) % 360
+            heading = (heading + 90).truncatingRemainder(dividingBy: 360)
             speed *= 0.75
         }
     }
     
     func driftLeft() {
         if speed > 0 {
-            heading = (heading + 270) % 360
+            heading = (heading + 270).truncatingRemainder(dividingBy: 360)
             speed *= 0.75
         }
     }

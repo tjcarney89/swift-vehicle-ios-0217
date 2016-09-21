@@ -46,14 +46,14 @@ class Plane: Vehicle {
     
     func bankLeft() {
         if inFlight {
-            heading = (heading + 315) % 360
+            heading = (heading + 315).truncatingRemainder(dividingBy: 360)
             speed *= 0.9
         }
     }
     
     func bankRight() {
         if inFlight {
-            heading = (heading + 45) % 360
+            heading = (heading + 45).truncatingRemainder(dividingBy: 360)
             speed *= 0.9
         }
     }
