@@ -116,7 +116,7 @@ Write a designated initializer that takes four arguments, three for the supercla
 
 Write new aviation methods which take no arguments nor provide any returns:
 
-1. `takeOff()` which only affects a plane that is not in flight. This method should set the `speed` and `altitude` properties to one tenth (1/10th) of their maximums.
+1. `takeoff()` which only affects a plane that is not in flight. This method should set the `speed` and `altitude` properties to one tenth (1/10th) of their maximums.
 
 2. `land()` which sets the `speed` and `altitude` properties to zero.
 
@@ -156,3 +156,5 @@ Create a few instances of your new vehicular classes in the `AppDelegate`'s `app
 
 <a href='https://learn.co/lessons/swift-vehicle' data-visibility='hidden'>View this lesson on Learn.co</a>
 
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/swift-vehicle'>Vehicle</a> on Learn.co and start learning to code for free.</p>
