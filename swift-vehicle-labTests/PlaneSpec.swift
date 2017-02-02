@@ -81,7 +81,7 @@ class PlaneSpec: QuickSpec {
                 }
             }
             
-            describe("takeOff") {
+            describe("takeoff") {
                 it("sets the speed to 10% of maxSpeed") {
                     cessna172.takeoff()
                     p51Mustang.takeoff()
